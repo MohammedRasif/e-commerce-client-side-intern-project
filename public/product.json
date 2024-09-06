@@ -1,0 +1,327 @@
+[
+    {
+      "id": 1,
+      "title": "rocking",
+      "name": "Classic Wooden Rocker",
+      "img": "https://i.ibb.co/h2mxVdT/rch-306.jpg",
+      "old_price": 120.00,
+      "discount_price": 90.00,
+      "description": "A cozy rocking made of high-quality wood with a soft cushion. "
+    },
+    {
+      "id": 2,
+      "title": "rocking",
+      "name": "Vintage Rocker Deluxe",
+      "img": "https://i.ibb.co/QC4VrYC/rch-6.jpg",
+      "old_price": 135.00,
+      "discount_price": 105.00,
+      "description": "Vintage-style wooden rocking with a cushioned seat for ultimate comfort."
+    },
+    {
+      "id": 3,
+      "title": "rocking",
+      "name": "Modern Rocker with Cushions",
+      "img": "https://i.ibb.co/rs9wTcp/rch-5.jpg",
+      "old_price": 140.00,
+      "discount_price": 110.00,
+      "description": "Stylish rocking with modern design and padded cushions for extra support."
+    },
+    {
+      "id": 4,
+      "title": "rocking",
+      "name": "Premium Wooden Rocker",
+      "img": "https://i.ibb.co/vmwMN3m/monet-rocking-chair-natural.webp",
+      "old_price": 150.00,
+      "discount_price": 115.00,
+      "description": "Premium handcrafted rocking with superior wood finish and comfort."
+    },
+    {
+      "id": 5,
+      "title": "rocking",
+      "name": "Elegant Oak Rocker",
+      "img": "https://i.ibb.co/yVgHCwm/IT-130870-T-1-1500x.webp",
+      "old_price": 160.00,
+      "discount_price": 120.00,
+      "description": "Elegant oak rocking with plush padding and solid build."
+    },
+    {
+      "id": 6,
+      "title": "rocking",
+      "name": "Rustic Cabin Rocker",
+      "img": "https://i.ibb.co/5ky0KdT/images.jpg",
+      "old_price": 125.00,
+      "discount_price": 100.00,
+      "description": "A rustic, cabin-style rocking perfect for outdoor and indoor use."
+    },
+    {
+      "id": 7,
+      "title": "rocking",
+      "name": "Comfort Glider Rocker",
+      "img": "https://i.ibb.co/ZVx1YZs/images-3.jpg",
+      "old_price": 145.00,
+      "discount_price": 115.00,
+      "description": "A comfort glider rocker with smooth motion and extra padding."
+    },
+    {
+      "id": 8,
+      "title": "rocking",
+      "name": "Luxury Upholstered Rocker",
+      "img": "https://i.ibb.co/R3YcLLM/images-2.jpg",
+      "old_price": 175.00,
+      "discount_price": 130.00,
+      "description": "A luxurious upholstered rocking designed for maximum relaxation."
+    },
+    {
+      "id": 9,
+      "title": "rocking",
+      "name": "Designer Wood Rocker",
+      "img": "https://i.ibb.co/0C3nVds/images-1.jpg",
+      "old_price": 165.00,
+      "discount_price": 125.00,
+      "description": "A designer wooden rocking with a sleek, contemporary design."
+    },
+    {
+      "id": 10,
+      "title": "rocking",
+      "name": "Chic Metal Rocker",
+      "img": "https://i.ibb.co/gzG2xw0/Diddle-105.jpg",
+      "old_price": 130.00,
+      "discount_price": 95.00,
+      "description": "A chic metal rocking with a modern twist on traditional design."
+    },
+    {
+      "id": 11,
+      "title": "rocking",
+      "name": "Urban Rocker with Fabric",
+      "img": "https://i.ibb.co/YpCKxMx/1123229-3l.webp",
+      "old_price": 180.00,
+      "discount_price": 140.00,
+      "description": "Urban-inspired rocker with durable fabric and ergonomic structure."
+    },
+    {
+      "id": 12,
+      "title": "rocking",
+      "name": "Minimalist Wooden Rocker",
+      "img": "https://i.ibb.co/hFFmwJ1/71-Xgkv7l8x-L-AC-SL1500.jpg",
+      "old_price": 110.00,
+      "discount_price": 85.00,
+      "description": "Minimalist wooden rocker for a clean and simple aesthetic."
+    },
+    {
+      "id": 13,
+      "title": "rocking",
+      "name": "Comfort Plus Rocker",
+      "img": "https://i.ibb.co/y5JyV8H/619q95-r-Nv-L.jpg",
+      "old_price": 155.00,
+      "discount_price": 125.00,
+      "description": "A comfort-plus rocker with extra wide seat and padding."
+    },
+    {
+      "id": 14,
+      "title": "rocking",
+      "name": "Relaxation Rocker",
+      "img": "https://i.ibb.co/SPzQff6/619q95-r-Nv-L.jpg",
+      "old_price": 140.00,
+      "discount_price": 110.00,
+      "description": "rocking designed for deep relaxation and stress relief."
+    },
+    {
+      "id": 15,
+      "title": "rocking",
+      "name": "Artisan Wooden Rocker",
+      "img": "https://i.ibb.co/LgrZrRC/71-l-RLGIJ6-L-AC-SL1500.jpg",
+      "old_price": 160.00,
+      "discount_price": 130.00,
+      "description": "Handcrafted wooden rocking by skilled artisans."
+    },
+    {
+      "id": 16,
+      "title": "side",
+      "name": "Modern Dining side",
+      "img": "https://i.ibb.co/6rttFnf/1-8c4ac18e-199c-4caf-a955-0fa4a8527b0f.jpg",
+      "old_price": 80.00,
+      "discount_price": 60.00,
+      "description": "A sleek modern dining side perfect for any contemporary home."
+    },
+    {
+      "id": 17,
+      "title": "side",
+      "name": "Elegant Upholstered side",
+      "img": "https://i.ibb.co/7bpyZh2/0309931-stylee-ventral-arm-chair-orange.jpg",
+      "old_price": 100.00,
+      "discount_price": 75.00,
+      "description": "An elegant upholstered side with a comfortable seat and backrest."
+    },
+    {
+      "id": 18,
+      "title": "side",
+      "name": "Vintage Wooden side",
+      "img": "https://i.ibb.co/R3636K4/Bertoia-Side-10.jpg",
+      "old_price": 85.00,
+      "discount_price": 65.00,
+      "description": "A vintage-style wooden side with a sturdy frame and timeless look."
+    },
+    {
+      "id": 19,
+      "title": "side",
+      "name": "Designer Plastic side",
+      "img": "https://i.ibb.co/1X7Sq4B/images-1.jpg",
+      "old_price": 90.00,
+      "discount_price": 70.00,
+      "description": "A designer plastic side that's durable and stylish."
+    },
+    {
+      "id": 20,
+      "title": "side",
+      "name": "Classic Wooden side",
+      "img": "https://i.ibb.co/qkt8jgd/images-2.jpg",
+      "old_price": 95.00,
+      "discount_price": 72.00,
+      "description": "A classic wooden side with a traditional feel and elegant finish."
+    },
+    {
+      "id": 21,
+      "title": "side",
+      "name": "Urban Metal side",
+      "img": "https://i.ibb.co/QFXQjX8/images-3.jpg",
+      "old_price": 105.00,
+      "discount_price": 80.00,
+      "description": "A modern urban metal side for trendy dining spaces."
+    },
+    {
+      "id": 22,
+      "title": "side",
+      "name": "Contemporary side",
+      "img": "https://i.ibb.co/smktVLf/images-4.jpg",
+      "old_price": 110.00,
+      "discount_price": 85.00,
+      "description": "A contemporary side with sleek lines and a comfortable design."
+    },
+    {
+      "id": 23,
+      "title": "side",
+      "name": "Ergonomic side",
+      "img": "https://i.ibb.co/Hp7npCr/images.jpg",
+      "old_price": 120.00,
+      "discount_price": 90.00,
+      "description": "An ergonomic side designed for both comfort and style."
+    },
+    {
+      "id": 24,
+      "title": "side",
+      "name": "Industrial Metal side",
+      "img": "https://i.ibb.co/g77gVKg/Kallista-Side-Chair.jpg",
+      "old_price": 115.00,
+      "discount_price": 88.00,
+      "description": "An industrial-style metal side for lofts and urban homes."
+    },
+    {
+      "id": 25,
+      "title": "side",
+      "name": "Retro side",
+      "img": "https://i.ibb.co/jyGsnvY/open-box-mid-century-upholstered-dining-chair-wood-legs-o.jpg",
+      "old_price": 125.00,
+      "discount_price": 95.00,
+      "description": "A retro-inspired side with unique flair and design."
+    },
+    {
+      "id": 26,
+      "title": "side",
+      "name": "Wooden and Metal side",
+      "img": "https://i.ibb.co/xY8C8CC/Sofia-Side-Chair-1.jpg",
+      "old_price": 110.00,
+      "discount_price": 85.00,
+      "description": "A combination of wood and metal for a sturdy construction and sleek look."
+    }
+    ,
+    {
+        "id": 27,
+        "title": "lounge",
+        "name": "Luxury Leather lounge",
+        "img": "https://i.ibb.co/2P85Tnn/51-Rf-V-xlpr-L-AC-UF1000-1000-QL80.jpg",
+        "old_price": 350.00,
+        "discount_price": 280.00,
+        "description": "A luxurious leather lounge that provides superior comfort and style."
+      },
+      {
+        "id": 28,
+        "title": "lounge",
+        "name": "Modern Fabric lounge",
+        "img": "https://i.ibb.co/r78PwbC/81xh9-K1-Jvi-S.jpg",
+        "old_price": 300.00,
+        "discount_price": 240.00,
+        "description": "A modern lounge with durable fabric and a sleek, contemporary design."
+      },
+      {
+        "id": 29,
+        "title": "lounge",
+        "name": "Scandinavian lounge",
+        "img": "https://i.ibb.co/Pxm3W0c/914sri-OIoy-L-AC-SL1500.jpg",
+        "old_price": 320.00,
+        "discount_price": 260.00,
+        "description": "A Scandinavian-inspired lounge with a minimalistic design."
+      },
+      {
+        "id": 30,
+        "title": "lounge",
+        "name": "Artisan Crafted lounge",
+        "img": "https://i.ibb.co/QH1x4jh/dscf5469.jpg",
+        "old_price": 400.00,
+        "discount_price": 320.00,
+        "description": "Handcrafted lounge made by artisans for an exclusive design."
+      },
+      {
+        "id": 31,
+        "title": "lounge",
+        "name": "Comfort Recliner lounge",
+        "img": "https://i.ibb.co/ncRVRNW/eames-lounge-chair-3.jpg",
+        "old_price": 450.00,
+        "discount_price": 360.00,
+        "description": "A lounge with a reclining feature for ultimate relaxation."
+      },
+      {
+        "id": 32,
+        "title": "lounge",
+        "name": "Vintage lounge",
+        "img": "https://i.ibb.co/wM6sfNc/Eureka-Ergonomic-Chloe-Comfort-Rocking-Lounge-Chair.webp",
+        "old_price": 380.00,
+        "discount_price": 300.00,
+        "description": "Vintage-style lounge with a timeless appeal and cozy cushions."
+      },
+      {
+        "id": 33,
+        "title": "lounge",
+        "name": "Minimalist lounge",
+        "img": "https://i.ibb.co/ccSZDYd/images-1.jpg",
+        "old_price": 340.00,
+        "discount_price": 275.00,
+        "description": "A minimalist lounge with clean lines and a simple design."
+      },
+      {
+        "id": 34,
+        "title": "lounge",
+        "name": "Ergonomic lounge",
+        "img": "https://i.ibb.co/dmTX99p/images-3.jpg",
+        "old_price": 360.00,
+        "discount_price": 290.00,
+        "description": "An ergonomic lounge designed for both style and comfort."
+      },
+      {
+        "id": 35,
+        "title": "lounge",
+        "name": "Rustic Wooden lounge",
+        "img": "https://i.ibb.co/WHg2MTY/images-5.jpg",
+        "old_price": 330.00,
+        "discount_price": 260.00,
+        "description": "A rustic wooden lounge perfect for both indoor and outdoor use."
+      },
+      {
+        "id": 36,
+        "title": "lounge",
+        "name": "Classic Club lounge",
+        "img": "https://i.ibb.co/hBk5S0W/super-long-lounge-chair-luxury-brasilia-chaise-lounge.jpg",
+        "old_price": 390.00,
+        "discount_price": 310.00,
+        "description": "A classic club-style lounge with deep seating and plush cushions."
+      }
+  ]
