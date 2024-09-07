@@ -1,27 +1,30 @@
-import { useContext, useState } from "react";
 import img from "./icon.png";
 import google from "./4LSMF-removebg-preview.png";
-import { Form, Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import toast from "react-hot-toast";
-const Login = () => {
+const SignIn = () => {
+  const { createUser, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
-  const { signInUser, signInWithGoogle } = useContext(AuthContext);
 
-  const handelLogin = async (event) => {
-    event.preventDefault();
-    const form = event.target;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const first = form.first.value;
+    const last = form.last.value;
     const email = form.email.value;
     const password = form.password.value;
-    // console.log(email,password)
+
     try {
-      const result = await signInUser(email, password);
+      const result = await createUser(email, password, first, last);
       console.log(result);
+
       navigate("/");
-      toast.success("Login Successfully");
+      toast.success("SignUp Successful");
     } catch (error) {
       console.log(error);
-      toast.error(error?.massage);
+      toast.error(error.message);
     }
   };
 
@@ -35,24 +38,47 @@ const Login = () => {
       toast.error(error.message);
     }
   };
-
   return (
     <div className="flex ">
-      <div className="lg:w-1/2  mt-28 ml-56 ">
-        <div className="px-7 py-10 mr-64 rounded-md bg-slate-200">
-          <h1 className="text-4xl  font-semibold">Welcome Back!</h1>
-          <p className="mb-4 text-sm">
+      <div className="lg:w-1/2  mt-24 ml-56 ">
+        <div className="px-7 py-10  mr-64 rounded-md bg-slate-200">
+          <h1 className="text-xl text-center  font-semibold">Welcome Back!</h1>
+          <a className="font-bold pl-20 ml-1 text-4xl">
+            Furni<span className="text-blue-500">Flex</span>{" "}
+          </a>
+          <p className=" text-center mb-4 text-sm">
             Enter your Credentials to access your account
           </p>
-          <form onSubmit={handelLogin}>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label className="form-control w-full max-w-xs">
+                <div className="label">
+                  <span className="">Email Address</span>
+                </div>
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-3">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    name="first"
+                    className=" bg-white input rounded-none input-bordered w-full max-w-xs"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last  email"
+                    name="last"
+                    className=" bg-white input rounded-none input-bordered w-full max-w-xs"
+                  />
+                </div>
+              </label>
+            </div>
             <label className="form-control w-full max-w-xs">
               <div className="label">
                 <span className="">Email Address</span>
               </div>
               <input
                 type="text"
-                name="email"
                 placeholder="Enter your email"
+                name="email"
                 className=" bg-white input rounded-none input-bordered w-full max-w-xs"
               />
             </label>
@@ -81,18 +107,19 @@ const Login = () => {
               Sign in
             </button>
             <hr />
-            <div className=" justify-center space-x-2">
-              <button onClick={handleGoogleSignIn}>
-                {" "}
-                <img src={google} className="h-24 ml-14" alt="" />
-              </button>
-            </div>
           </form>
+          <div className=" justify-center space-x-2">
+            <button onClick={handleGoogleSignIn}>
+              {" "}
+              <img src={google} className="h-24 ml-14" alt="" />
+            </button>
+          </div>
+
           <h1>
-            Have a new account{" "}
-            <Link to="/signIn">
+            Already have a account? please{" "}
+            <Link to="/login">
               <a href="" className="text-violet-500">
-                Sign Up
+                Login
               </a>
             </Link>
           </h1>
@@ -100,7 +127,7 @@ const Login = () => {
       </div>
       <div className="lg:w-1/2">
         <div
-          className="hero min-h-screen min-w-full"
+          className="hero h-[900px] min-w-full"
           style={{
             backgroundImage:
               "url(https://i.ibb.co.com/HpDxYYG/chris-lee-70l1t-DAI6r-M-unsplash-1.png)",
@@ -130,4 +157,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;

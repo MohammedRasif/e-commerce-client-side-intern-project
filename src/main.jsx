@@ -1,6 +1,5 @@
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css' 
 import {
   createBrowserRouter,
@@ -11,6 +10,8 @@ import ErrorPage from './assets/ErrorPage/ErrorPage.jsx';
 import Home from './assets/Component/Home/Home.jsx';
 import ProductTab from './assets/Component/Product/ProductTab.jsx';
 import Login from './assets/Component/Login/Login.jsx';
+import SignIn from './assets/Component/SignIn/SignIn.jsx';
+import AuthProvider from './assets/AuthProvider/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,12 +33,19 @@ const router = createBrowserRouter([
         path:"/login",
         element:<Login></Login>
       }
+      ,
+      {
+        path:"/signIn",
+        element:<SignIn></SignIn>
+      }
     ]
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
-    </StrictMode>,
+    </AuthProvider>
+  </React.StrictMode>,
 )

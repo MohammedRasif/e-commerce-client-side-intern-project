@@ -1,9 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import img from "./logo.png";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Navber = () => {
-    
+  const { user, logOut } = useContext(AuthContext);
+
   const navLinks = (
     <>
       <li>
@@ -71,14 +74,46 @@ const Navber = () => {
         </div>
         <div className="navbar-end">
           <button className=" flex font-bold text-2xl mr-5">
-            <HiOutlineShoppingBag/>
+            <HiOutlineShoppingBag />
             <div className="badge badge-secondary "></div>
           </button>
-          <Link to="/login">
-            <button className=" btn font-bold text-2xl mr-5">Login</button>
-          </Link>
+
+          <div>
+            {user ? (
+              <>
+                <div className="dropdown dropdown-end">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="btn btn-ghost btn-circle avatar"
+                  >
+                    <div className="w-10  ring ring-black rounded-full">
+                      <img className="" alt="User Image" src={user?.photoURL} />
+                    </div>
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="mt-3 z-10 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      {" "}
+                      <p className="py-2">{user?.displayName}</p>
+                    </li>
+                    <li>
+                      <button onClick={logOut} className=" py-3  text-center bg-black text-white ">
+                        Logout
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </>
+            ) : (
+              <Link to="/login">
+                <button className=" btn font-bold text-2xl mr-5">Login</button>
+              </Link>
+            )}
+          </div>
         </div>
-        
       </div>
     </div>
   );
