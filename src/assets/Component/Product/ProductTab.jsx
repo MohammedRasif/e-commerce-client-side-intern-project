@@ -6,14 +6,7 @@ import ShowProduct from "./ShowProduct";
 import Product from "./Product";
 
 const ProductTab = () => {
-    // const categories = ['rocking','side','lounge',]
-    // const {name} = useParams()
-    // const initialIndex = categories.indexOf(name)
-    // const [tabIndex , setTabIndex] = useState(initialIndex)
-    // const [Products]=useProduct();
-    // const rocking = Products.filter(item => item.name === 'rocking')
-    // const side = Products.filter(item => item.name === 'side')
-    // const lounge = Products.filter(item => item.name === 'lounge')
+   
 
     const [tabIndex,setTabIndex] = useState(0);
     const [products]= useProduct();

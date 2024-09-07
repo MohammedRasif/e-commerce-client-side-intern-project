@@ -13,6 +13,7 @@ import SignIn from './assets/Component/SignIn/SignIn.jsx';
 import AuthProvider from './assets/AuthProvider/AuthProvider.jsx';
 import OderProduct from './assets/Component/OderProduct/OderProduct.jsx';
 import React from 'react';
+import PrivateRoute from './assets/PrivateRout/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
       ,
       {
         path:"/oderProduct",
-        element:<OderProduct></OderProduct>,
+        element:<PrivateRoute><OderProduct></OderProduct></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/oderProduct')
       }
     ]

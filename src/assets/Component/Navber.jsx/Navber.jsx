@@ -1,12 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import img from "./logo.png";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Navber = () => {
+  const [card , setCard] = useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:5000/oderProduct')
+        .then(res => res.json())
+        .then(data => {
+            setCard(data)
+        })
+    },[])
   const { user, logOut } = useContext(AuthContext);
-
   const navLinks = (
     <>
       <li>
@@ -75,7 +82,7 @@ const Navber = () => {
         <div className="navbar-end">
           <button className=" flex font-bold text-2xl mr-5">
             <Link to="/oderProduct"><HiOutlineShoppingBag /></Link>
-            <div className="badge badge-secondary "></div>
+            <div className="badge badge-secondary ">+{card.length}</div>
           </button>
 
           <div>
