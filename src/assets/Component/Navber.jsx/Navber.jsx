@@ -74,7 +74,7 @@ const Navber = () => {
         </div>
         <div className="navbar-end">
           <button className=" flex font-bold text-2xl mr-5">
-            <HiOutlineShoppingBag />
+            <Link to="/oderProduct"><HiOutlineShoppingBag /></Link>
             <div className="badge badge-secondary "></div>
           </button>
 

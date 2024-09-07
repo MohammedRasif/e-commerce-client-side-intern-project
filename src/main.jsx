@@ -1,4 +1,3 @@
-import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css' 
 import {
@@ -12,6 +11,8 @@ import ProductTab from './assets/Component/Product/ProductTab.jsx';
 import Login from './assets/Component/Login/Login.jsx';
 import SignIn from './assets/Component/SignIn/SignIn.jsx';
 import AuthProvider from './assets/AuthProvider/AuthProvider.jsx';
+import OderProduct from './assets/Component/OderProduct/OderProduct.jsx';
+import React from 'react';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,12 @@ const router = createBrowserRouter([
       {
         path:"/signIn",
         element:<SignIn></SignIn>
+      }
+      ,
+      {
+        path:"/oderProduct",
+        element:<OderProduct></OderProduct>,
+        loader: () => fetch('http://localhost:5000/oderProduct')
       }
     ]
   },

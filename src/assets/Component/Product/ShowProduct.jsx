@@ -14,7 +14,7 @@ const ShowProduct = ({ item }) => {
       email: adderMail,
       name: item.name,
       title: item.title,
-      marks: parseFloat(item.discount_price),
+      price: parseFloat(item.discount_price),
       description: item.description,
       img: item.img,
     };

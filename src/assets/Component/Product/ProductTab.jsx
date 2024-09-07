@@ -43,26 +43,6 @@ const ProductTab = () => {
             </Tabs>
 
 
-            {/* <Tabs  defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-            <TabList>
-                <Tab>rocking</Tab>
-                <Tab>side</Tab>
-                <Tab>lounge</Tab>
-                
-            </TabList>
-           
-           <TabPanel>
-                <Product items={rocking}></Product>
-            </TabPanel>
-            <TabPanel>
-            <Product items={side}></Product>
-            </TabPanel>
-            <TabPanel>
-            <Product items={lounge}></Product>
-             </TabPanel>
-            
-          
-            </Tabs> */}
         </div>
     );
 };
